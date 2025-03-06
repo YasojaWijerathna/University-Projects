@@ -1,0 +1,41 @@
+.main_body {
+    background-image: url("resources/images/background3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_body2{
+    background-image: url("resources/images/background-body.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    background-image: url("resources/images/logo.jpg");
+    height: 130px;
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.watermark {
+    background-image: url("resources/images/watermark.2.jpg");
+    height: 100px;
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+
+}
+.backgroundImg{
+    
+        background-image: url("resources/images/indexBackground.jpg");
+        height: 500px;
+
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+}
