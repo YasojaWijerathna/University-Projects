@@ -1,0 +1,13 @@
+[2024-08-30 17:04:41] net.sf.jasperreports.engine.JRException: java.io.FileNotFoundException: \lk\styrox\pharma_care\reports\invoice.jasper
+[2024-08-30 17:06:54] net.sf.jasperreports.engine.JRException: Unknown column name: Price.
+[2024-08-30 17:13:37] net.sf.jasperreports.engine.JRException: Unknown column name: Price.
+[2024-08-30 17:14:58] net.sf.jasperreports.engine.JRException: java.io.FileNotFoundException: src\lk\styrox\pharma_care\reports\invoice.jasper
+[2024-08-30 17:16:21] net.sf.jasperreports.engine.JRException: Byte data not found at: pharma_care_removebg.png.
+[2024-08-30 18:20:50] net.sf.jasperreports.engine.JRException: Unknown column name: Buying .
+[2024-08-30 21:45:07] net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $P{logo}
+[2024-08-30 21:47:13] net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $P{logo}
+[2024-08-30 21:49:10] net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $P{logo}
+[2024-08-30 21:56:11] net.sf.jasperreports.engine.JRException: Byte data not found at: java.io.BufferedInputStream@561d45bf.
+[2024-08-30 22:00:54] net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $P{logo}
+[2024-08-31 11:46:45] net.sf.jasperreports.engine.fill.JRExpressionEvalException: Error evaluating expression for source text: $F{Quantity}
+[2024-08-31 17:49:47] java.sql.SQLException: Column 'qty' not found.

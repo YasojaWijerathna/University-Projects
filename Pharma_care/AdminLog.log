@@ -1,0 +1,18 @@
+[2024-08-23 00:06:18] java.sql.SQLSyntaxErrorException: Table 'pharma_care.student' doesn't exist
+[2024-08-23 21:17:15] java.sql.SQLSyntaxErrorException: Table 'pharma_care.prod' doesn't exist
+[2024-08-24 15:53:19] java.sql.SQLSyntaxErrorException: Unknown column 'supplier.comapany_id' in 'on clause'
+[2024-08-24 16:11:05] java.sql.SQLException: Column 'user.lname' not found.
+[2024-08-24 16:19:50] java.sql.SQLException: Column 'user.mobile' not found.
+[2024-08-24 16:44:05] java.sql.SQLException: Column 'user.mobile' not found.
+[2024-08-24 16:44:11] java.sql.SQLException: Column 'user.mobile' not found.
+[2024-08-24 16:45:07] java.sql.SQLIntegrityConstraintViolationException: Column 'name' in where clause is ambiguous
+[2024-08-27 21:36:56] java.sql.SQLSyntaxErrorException: Unknown column 'supplier.id' in 'where clause'
+[2024-08-28 20:48:27] java.sql.SQLSyntaxErrorException: Unknown column 'product.status_id' in 'where clause'
+[2024-08-28 20:55:51] java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets.
+[2024-08-28 20:55:56] java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets.
+[2024-08-28 20:55:58] java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets.
+[2024-08-29 12:17:12] java.sql.SQLException: Before start of result set
+[2024-08-29 12:21:15] java.sql.SQLException: Incorrect DATETIME value: 'Tue Aug 06 12:17:29 IST 2024'
+[2024-08-29 12:25:33] java.sql.SQLException: Incorrect DATETIME value: 'Wed Aug 07 12:25:23 IST 2024'
+[2024-08-31 02:07:52] java.sql.SQLException: Incorrect DATE value: 'Fri Aug 30 02:07:48 IST 2024'
+[2024-08-31 02:11:28] java.sql.SQLException: Incorrect DATE value: 'Mon Jul 15 02:11:20 IST 2024'
