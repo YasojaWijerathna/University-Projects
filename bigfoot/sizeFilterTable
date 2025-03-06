@@ -1,0 +1,22 @@
+       <div class="col-sm-12 col-md-6 col-lg-12">
+           <div class="sidebar border mb-1">
+               <h3>Size</h3>
+               <div class="size-block mb-2">
+
+                   <?php
+                    $size_rs = Database::search("SELECT * FROM `p_size`");
+                    $size_num = $size_rs->num_rows;
+                    ?>
+                   <ul>
+                       <?php
+                        for ($x = 0; $x < $size_num; $x++) {
+                            $size_data = $size_rs->fetch_assoc();
+                        ?>
+                           <li><a href="#"><?php echo $size_data["size"]; ?></a></li>
+                       <?php
+                        }
+                        ?>
+                   </ul>
+               </div>
+           </div>
+       </div>
