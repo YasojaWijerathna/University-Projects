@@ -1,0 +1,26 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package lk.starfield.yasoja.main_components;
+
+import com.formdev.flatlaf.FlatClientProperties;
+import javax.swing.JTextField;
+
+
+/**
+ *
+ * @author dnana
+ */
+public class roundTextField extends JTextField{
+
+    public roundTextField() {
+        init();
+    }
+    
+    private void init(){
+        this.putClientProperty(FlatClientProperties.STYLE, "arc:20;"
+                + " margin:0,10,0,10"); // margin is padding the format: Top,Left,Bottom,Right
+    }
+    
+}

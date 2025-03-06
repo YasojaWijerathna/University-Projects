@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Starfield_duelist" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a5f6fb56-c326-4670-bfb9-26355f057c0a">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[c3R1ZGVudCAsMTUsMTUsZjZhMDBhN2QtZWNhZC00MmY2LTkwMTUtNjM5YWIwNWU1OWJmO2NsYXNz
+ICwzMTcsMTUsZjNjNTc1NGMtZTljNS00MzdkLWJlMTktYzZiNTM3MjZkOTlkO3RlYWNoZXIgLDQ1
+MSwxNSxlMWJjY2Q3Ni1hZGQ1LTQ2Y2ItODYzNi03ODAzMmMxZDM0OTA7Y2xhc3NfZW5yb2xsICwx
+ODMsMTUsOThkMDhhZjUtZDI0OS00MWZmLTlkYzYtNjZmYjQxZDc4MWI5O3N1YmplY3QgLDU4Mywz
+MSw0ZTZjMGZlYS1iMzIyLTQxOTgtYTk4OC01YTBlODI5YjkzMmI7]]>
+	</property>
+	<parameter name="count" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT *
+FROM student
+	INNER JOIN class_enroll ON 
+	 student.id = class_enroll.student_id 
+	INNER JOIN class ON 
+	 class_enroll.class_id = class.id 
+	INNER JOIN teacher ON 
+	 class.teacher_id = teacher.id 
+	INNER JOIN subject ON 
+	 teacher.subject_id = subject.id 
+WHERE 
+	 student.payment_status = '6']]>
+	</queryString>
+	<field name="Student ID" class="java.lang.String"/>
+	<field name="Student Name" class="java.lang.String"/>
+	<field name="Subject" class="java.lang.String"/>
+	<field name="Class ID" class="java.lang.String"/>
+	<field name="Amount" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="190" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="0" y="0" width="560" height="190" uuid="90472959-7238-4fbc-b72e-ea39506d943f"/>
+				<imageExpression><![CDATA["src/lk/starfield/yasoja/img/report_bg.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="150" y="-20" width="260" height="140" uuid="e2660c20-7e87-4201-bb9e-1514520cb697"/>
+				<imageExpression><![CDATA["src/lk/starfield/yasoja/img/StarFIeld_long_version_crop-removebg.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="180" y="110" width="201" height="30" uuid="760cd1ee-fe37-4884-89a0-124b34a31d74"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[No.  457/1, Kandy Road]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="140" width="201" height="20" uuid="237cd119-e75d-4397-8a6e-78e943dc61ee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kiribathgoda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="160" width="260" height="30" uuid="f7432dcb-8b08-4e7e-9507-1ceb0445a2b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Mobile :0728945623 / 0715682943]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="360" y="30" width="101" height="21" uuid="09dc223e-4806-47b2-9146-440ce8af88ff"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="130" height="30" uuid="aa332a00-5380-4268-933b-42e37148db0b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Rounded MT Bold" size="16" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Due List]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="51" width="101" height="21" uuid="5e47b31a-bb9c-45d3-814b-ed4238928509"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Total Due Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="51" width="110" height="21" uuid="45ff06c0-cb6e-4685-a141-5bddb6307bc3"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Total Count of Students]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="51" width="100" height="21" uuid="f77e29db-8f8e-4ec3-bf89-2daa14d5bc34"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{count}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="461" y="30" width="89" height="21" uuid="89520a48-1c4e-40a7-8c27-46ba2789a32e"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="461" y="51" width="89" height="21" uuid="2cc0241f-750e-4bf1-8cd7-abf343fd5339"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="30" y="20" width="80" height="30" forecolor="#FFFFFF" backcolor="#54B7FF" uuid="550a3561-3164-46b9-9aeb-a406f13ed89e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b06130b4-e99c-4057-88b1-e154a1e3f68f"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#030000"/>
+					<bottomPen lineWidth="2.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Consolas" size="14"/>
+				</textElement>
+				<text><![CDATA[Student ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="110" y="20" width="130" height="30" forecolor="#FFFFFF" backcolor="#54B7FF" uuid="fa6deea7-cfa1-4c7b-9e9c-db9b4a7f05e0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="978c3214-15f2-43a2-95e6-8fd37b83ca0b"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#030000"/>
+					<bottomPen lineWidth="2.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Consolas" size="14"/>
+				</textElement>
+				<text><![CDATA[Student Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="240" y="20" width="100" height="30" forecolor="#FFFFFF" backcolor="#54B7FF" uuid="ecf9ad80-f44b-4c49-b10c-26bf4f65f8e1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="22407db5-2e45-4448-82aa-b844b896b28b"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#030000"/>
+					<bottomPen lineWidth="2.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Consolas" size="14"/>
+				</textElement>
+				<text><![CDATA[Subject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="341" y="20" width="79" height="30" forecolor="#FFFFFF" backcolor="#54B7FF" uuid="d71d22f2-25fc-418b-b6e8-364e0e72f550">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71938367-b5a2-40d5-bccd-fe53e970c6ca"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#030000"/>
+					<bottomPen lineWidth="2.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Consolas" size="14"/>
+				</textElement>
+				<text><![CDATA[Class ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="20" width="100" height="30" forecolor="#FFFFFF" backcolor="#54B7FF" uuid="d1a77a83-6e5a-4c65-a2fd-7386cb76b345">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7cbac5cb-550a-4e5b-bc59-5798c3bff492"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#030000"/>
+					<bottomPen lineWidth="2.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Consolas" size="14"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="0" width="80" height="30" uuid="8d295417-f629-4af2-96a2-5413f21c778d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b06130b4-e99c-4057-88b1-e154a1e3f68f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Student ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="130" height="30" uuid="c47565be-ec28-4c9e-a161-2babc63555b2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="978c3214-15f2-43a2-95e6-8fd37b83ca0b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Student Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="100" height="30" uuid="4222f8d9-fee3-4a6c-8f21-44835bbd24f8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="22407db5-2e45-4448-82aa-b844b896b28b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Subject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="0" width="79" height="30" uuid="13947c6d-829c-4278-b9fb-4be0354cdc34">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71938367-b5a2-40d5-bccd-fe53e970c6ca"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Class ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="100" height="30" uuid="46e0fd7c-00cc-43c0-867a-865168bbaad5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7cbac5cb-550a-4e5b-bc59-5798c3bff492"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

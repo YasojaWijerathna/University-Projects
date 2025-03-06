@@ -1,0 +1,1 @@
+[2024-08-18 12:02:50] java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` ='yaswije' AND `password`='Colombo@123'' at line 1
